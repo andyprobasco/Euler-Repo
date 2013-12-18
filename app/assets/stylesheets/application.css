@@ -1,0 +1,186 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ 
+/*
+	#f8fff0
+	#f1f3f4
+	#7b94a3
+	#4b606c
+	#ff5c46
+	#3ca3da
+*/
+
+pre {
+	font-family: 'Open Sans';
+	margin:2px;
+}
+pre a {
+	color:#4b606c;
+	/*padding: 5px;
+	padding-left:7px;
+	padding-right:7px;
+	border-radius:5px;
+	margin: 5px;*/
+	padding: 6px;
+	padding-left:20px;
+	padding-right:20px;
+	border-radius:5px;
+	text-decoration: none;
+	border: 1px solid #f1f3f4;
+}
+
+pre a:link {color:#4b606c;}
+pre a:visited {color:#4b606c;}
+pre a:hover {
+	color:#4b606c;
+	background-color:#ffffff;
+	border: 1px solid #dfe5e7;
+	text-decoration: none;
+	}
+pre a:active {color:#4b606c;}
+
+a {
+	color: #4b606c;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+
+
+body {
+	font-family: 'Open Sans';
+	background-color: #f1f3f4;
+	color: #4b606c;
+	margin: 0;
+	margin-top: 0;
+}
+
+.header {
+	padding: 10px;
+	padding-left: 10%;
+	
+	background-color: #34424b;
+	color: #f1f3f4;
+	font-family: 'Open Sans Condensed';
+}
+.body {
+	padding:20px;
+	padding-left:20px;
+}
+.solution {
+	background-color: #ffffff;
+	color: #4b606c;
+	width: 700px;
+	padding: 10px;
+	margin-bottom: 2px;
+	margin-left: -10px;
+	box-shadow: 0px 2px 1px #7b94a3;
+	border-radius: 5px;
+	text-overflow: clip;
+}
+.solution strong {
+	color: #3ca3da;
+}
+.solution details strong {
+	color: #ffffff;
+}
+.post_edit_link {
+	padding-left:340px;
+	font-size: 12px;
+	margin-bottom:10px;
+}
+
+.comment_link {
+	padding-left:350px;
+}
+.comment_link a {
+	color: #ffffff;
+	font-size:12px;
+}
+.comment_body {
+	background-color: #f1f3f4;
+	color: #4b606c;
+	width: 360px;
+	padding: 10px;
+	margin: 10px;
+	margin-bottom:0;
+	box-shadow: 0px 2px 1px #7b94a3;
+	border-radius: 5px;
+}
+details {
+	background-color: #7b94a3;
+	color: #ffffff;
+	width: 400px;
+	padding: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	box-shadow: 0px 2px 1px #4b606c;
+	border-radius: 5px;
+}
+summary:focus {
+	outline:0;
+}
+
+input[type=submit] {
+	font-size:16pt;
+	padding:8px;
+	background-color: #3ca3da;
+	color:#ffffff;
+	font-family: "Open Sans";
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0px 2px 1px rgb(42, 132, 180);
+}
+input[type=submit]:hover {
+	background-color: rgb(65, 176, 236)
+}
+input[type=text] {
+	width:390px;
+}
+textarea {
+	width:390px;
+	height:100px;
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Light'), local('OpenSans-Light'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Open Sans'), local('OpenSans'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Bold'), local('OpenSans-Bold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzHhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans Condensed';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v6/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
+}
+@font-face {
+	font-family: 'Open Sans Condensed';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v6/gk5FxslNkTTHtojXrkp-xONSK5BxN3NFS4EJkViHIqo.woff) format('woff');
+}

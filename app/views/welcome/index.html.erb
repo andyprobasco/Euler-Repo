@@ -1,0 +1,18 @@
+<%= render "toolbar" %>
+
+<div class="header">
+<h1>Project Euler Solution Repository</h1>
+<strong>Startup Institute Rails Demo</strong>
+</div>
+
+<div class="body">
+	<% if @lastPosts %>
+		<% @lastPosts.each do |post| %>
+			<% if post %>
+		    	<% @post = post %>
+		    	<%= render :partial => "posts/viewpost", :locals => {:post => post} %>
+		    	<p></p><p></p><p></p>
+			<% end %>
+		<% end %>
+	<% end %>
+</div>

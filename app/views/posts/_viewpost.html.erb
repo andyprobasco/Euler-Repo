@@ -1,0 +1,23 @@
+<p>
+  <strong><%= @post.poster %>'s</strong> solution to <strong> <%= link_to 'problem '+ @post.problem.to_s, 'http://projecteuler.net/problem='+@post.problem.to_s, :target=>'_blank' %></strong>
+</p>
+
+<div class="solution">
+	<p>
+  		<strong>Solution:</strong>
+	</p>
+	<p>
+		<%= raw CodeRay.scan(@post.text, :ruby).div(:line_numbers => :table) %>
+	</p>
+	<details>
+	<summary><strong>Comments</strong></summary>
+	<%= render @post.comments %>
+	<h2>Add a comment:</h2>
+	<%= render "comments/form" %>
+	</details>
+	
+</div>
+<div class=post_edit_link>
+<%= link_to 'Edit', edit_post_path(@post) %> | <%= link_to 'Delete', post_path(@post),
+                    									method: :delete, data: { confirm: 'Are you sure?'} %>
+</div>

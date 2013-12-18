@@ -1,0 +1,30 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.toolbar > li { 
+    float:left; 
+}
+ul, .toolbar ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.toolbar li ul { 
+    display:none; 
+    list-style:none;
+}
+.toolbar a { 
+    display:block; 
+    text-decoration:none; 
+    padding:5px; 
+    background:grey; 
+    color:black; 
+}
+.toolbar .toggle-menu { 
+    background-color:black; 
+    color:white; 
+}
+.toolbar .active { 
+    background:blue;  
+}
